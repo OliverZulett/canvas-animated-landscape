@@ -14,7 +14,7 @@ function drawCar() {
 
 document.addEventListener("keydown", (keyHandler) => {
   const { key } = keyHandler;
-  dir = directions.has(key) ? directions.get(key) : dir;
+  const dir = directions.has(key) ? directions.get(key) : dir;
   position += dir;
 });
 
